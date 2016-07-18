@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <title>myApp</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width user-scalable=no initial-scale=1">
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/app.css"/>
+
+
+    <!--libs-->
+    <script src="libs/angular/angular.js"></script>
+    <script src="libs/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="libs/angular-resource/angular-resource.js"></script>
+    <script src="libs/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="libs/angular-cookies/angular-cookies.js"></script>
+    <script src="libs/ng-file-upload/ng-file-upload.js"></script>
+    <script src="libs/angular-messages/angular-messages.js"></script>
+
+    <!-- build:js -->
+    <!-- inject:js -->
+    <script src="src/names.js"></script>
+    <script src="src/app.js"></script>
+    <script src="src/views/items/items.js"></script>
+    <script src="src/views/contact/contact.js"></script>
+    <script src="src/directives/item/item-dctv.js"></script>
+    <script src="src/services/items-storage.js"></script>
+    <script src="src/services/user-storage.js"></script>
+    <script src="src/directives/header/header-dctv.js"></script>
+    <script src="src/services/modal/modal-generator.js"></script>
+    <script src="src/directives/upload/upload-dctv.js"></script>
+    <script src="src/directives/input/input-dctv.js"></script>
+    <!-- endinject -->
+    <!-- endbuild -->
+</head>
+<body>
+
+<header-dctv></header-dctv>
+
+<ul>
+    <li><a ui-sref="items">items</a></li>
+    <li><a ui-sref="contact">contact</a></li>
+</ul>
+
+<ui-view></ui-view>
+
+</body>
+</html>

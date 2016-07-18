@@ -1,0 +1,7 @@
+item tpl
+<hr>
+{{model.title}}
+<br>
+{{model.price}}
+<br>
+<button ng-if="$root.userState.access" class="btn btn-danger" ng-click="storage.delete(model)">Delete</button>

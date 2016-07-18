@@ -1,0 +1,13 @@
+
+<div class="modal-header">
+    <h3 class="modal-title">Dodaj produkt</h3>
+</div>
+<form name="addItemForm" class="modal-body"><input ng-model="model.title" type="text"><br>
+    <textarea required ng-model="model.description" cols="30" rows="10"></textarea>
+    <upload-dctv model="model.img"></upload-dctv>
+    <input required ng-model="model.price" type="number">
+</form>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ok(addItemForm.$valid)">OK</button>
+    <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+</div>
