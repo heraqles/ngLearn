@@ -1,2 +1,4 @@
 # ngLearn
-experimental Angular app from course 
+experimental Angular app for learning
+
+
